@@ -24,11 +24,20 @@ class App extends Component {
     }
 
     //componentWillMount() {
-      //console.log('[App.js] componentWillMount');
+    //  console.log('[App.js] componentWillMount');
     //}
 
     componentDidMount() {
       console.log('[App.js] componentDidMount');
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+      console.log('[App.js] shouldComponentUpdate');
+      return true;
+    }
+
+    componentDidUpdate() {
+      console.log('[App.js] componentDidUpdate');
     }
 
  
