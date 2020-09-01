@@ -1,4 +1,5 @@
 import React,{ Component} from 'react';
+//import React,{ Component, Fragment} from 'react';
 
 import Aux from '../../../hoc/Auxiliary';
 import classes from './Person.css';
@@ -7,6 +8,7 @@ class Person extends Component {
     render() {
         console.log('[Person.js] rendering...');
         return (
+            //<React.Fragment>either use<Fragment>
             <Aux>
                 <p onClick={this.props.click}>
                 I'm a {this.props.name} and I am {this.props.age} years old !
@@ -16,6 +18,7 @@ class Person extends Component {
                 <input key="i3" type="text" onChange={this.props.changed} 
                 value={this.props.name}/>
             </Aux>
+            //</React.Fragment> either use<Fragment>
         );
     }
 }
