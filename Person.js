@@ -21,6 +21,7 @@ class Person extends Component {
         return (
             //<React.Fragment>either use<Fragment>
             <Aux>
+                {this.props.isAuth ? <p>Authenticated!</p> : <p>Please log in</p>}
                 <p onClick={this.props.click}>
                 I'm a {this.props.name} and I am {this.props.age} years old !
                 </p>
